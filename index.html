@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/botoes__flutuante.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/grid__desktop.css">
+    <title>App consulta</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <h2>03:33</h2>
+            <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M0 13.3125L13.3125 0V13.3125H0Z" fill="#333333" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                    <path
+                        d="M6.09375 1.3125C6.34375 1.3125 6.55208 1.40625 6.71875 1.59375C6.90625 1.76042 7 1.96875 7 2.21875V12.4375C7 12.6875 6.90625 12.8958 6.71875 13.0625C6.55208 13.2292 6.34375 13.3125 6.09375 13.3125H1.21875C0.96875 13.3125 0.75 13.2292 0.5625 13.0625C0.395833 12.8958 0.3125 12.6875 0.3125 12.4375V2.21875C0.3125 1.96875 0.395833 1.76042 0.5625 1.59375C0.75 1.40625 0.96875 1.3125 1.21875 1.3125H2.3125V0H5V1.3125H6.09375Z"
+                        fill="#333333" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11" fill="none">
+                    <path
+                        d="M2.6875 5.6875C3.97917 4.41667 5.53125 3.78125 7.34375 3.78125C9.17708 3.78125 10.7292 4.41667 12 5.6875L10.6875 7.03125C9.77083 6.11458 8.65625 5.65625 7.34375 5.65625C6.03125 5.65625 4.91667 6.11458 4 7.03125L2.6875 5.6875ZM5.34375 8.375C5.88542 7.83333 6.55208 7.5625 7.34375 7.5625C8.13542 7.5625 8.80208 7.83333 9.34375 8.375L7.34375 10.375L5.34375 8.375ZM0 3.03125C2.04167 1.01042 4.48958 0 7.34375 0C10.2188 0 12.6667 1.01042 14.6875 3.03125L13.3438 4.375C11.6771 2.72917 9.67708 1.90625 7.34375 1.90625C5.01042 1.90625 3.01042 2.72917 1.34375 4.375L0 3.03125Z"
+                        fill="#333333" />
+                </svg>
+            </div>
+        </div>
+        <div class="usuario">
+            <img src="./styles/assets/Ellipse 4.svg" alt="foto de perfil">
+            <h2>Olá, Sônia</h2>
+            <p>Mais 4 consultas hoje</p>
+        </div>
+    </header>
+    <main>
+        <section class="cards__agenda">
+            <h2 class="Date">Hoje</h2>
+            <div class="container__cards">
+                <div class="cards__remoto">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/luciana_dias.png" alt="Foto do perfil paciente">
+                        <h2>Luciana Dias</h2>
+                        <div class="type_consult"><img src="./styles/assets/Camera.svg" alt="">
+                            <p>Consulta remota</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>14:00 - 15:00 (1 hora)</h2>
+                        <div class="botao">
+                            <button><a href="#">Ligar por vídeo</a></button>
+                            <button class="white"><a href="#">Ligar por áudio</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__local">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/larissa_santana.png" alt="Foto do perfil paciente">
+                        <h2>Larissa Santana</h2>
+                        <div class="type_consult"><img src="./styles/assets/pin.svg" alt="">
+                            <p>Consulta no local</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>16:00 - 17:00 - (1 hora)</h2>
+                        <div class="botao">
+                            <button class="blue"><a href="#">Ver endereço</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__remoto">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/marcos_correia.png" alt="Foto do perfil paciente">
+                        <h2>Marcos Correia</h2>
+                        <div class="type_consult"><img src="./styles/assets/Camera.svg" alt="">
+                            <p>Consulta remota</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>17:20 - 18:00 (40 minutos)</h2>
+                        <div class="botao">
+                            <button><a href="#">Ligar por vídeo</a></button>
+                            <button class="white"><a href="#">Ligar por áudio</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__local">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/clara_lemos.png" alt="Foto do perfil paciente">
+                        <h2>Clara Lemos</h2>
+                        <div class="type_consult"><img src="./styles/assets/pin.svg" alt="">
+                            <p>Consulta no local</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>18:00 - 19:00 - (1 hora)</h2>
+                        <div class="botao">
+                            <button class="blue"><a href="#">Ver endereço</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__local">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/larissa_santana.png" alt="Foto do perfil paciente">
+                        <h2>Larissa Santana</h2>
+                        <div class="type_consult"><img src="./styles/assets/pin.svg" alt="">
+                            <p>Consulta no local</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>16:00 - 17:00 - (1 hora)</h2>
+                        <div class="botao">
+                            <button class="blue"><a href="#">Ver endereço</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards__agenda">
+            <h2 class="Date">Amanhã</h2>
+            <div class="container__cards">
+                <div class="cards__local">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/larissa_santana.png" alt="Foto do perfil paciente">
+                        <h2>Larissa Santana</h2>
+                        <div class="type_consult"><img src="./styles/assets/pin.svg" alt="">
+                            <p>Consulta no local</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>16:00 - 17:00 - (1 hora)</h2>
+                        <div class="botao">
+                            <button class="blue"><a href="#">Ver endereço</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__local">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/clara_lemos.png" alt="Foto do perfil paciente">
+                        <h2>Clara Lemos</h2>
+                        <div class="type_consult"><img src="./styles/assets/pin.svg" alt="">
+                            <p>Consulta no local</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>18:00 - 19:00 - (1 hora)</h2>
+                        <div class="botao">
+                            <button class="blue"><a href="#">Ver endereço</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__remoto">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/luciana_dias.png" alt="Foto do perfil paciente">
+                        <h2>Luciana Dias</h2>
+                        <div class="type_consult"><img src="./styles/assets/Camera.svg" alt="">
+                            <p>Consulta remota</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>14:00 - 15:00 (1 hora)</h2>
+                        <div class="botao">
+                            <button><a href="#">Ligar por vídeo</a></button>
+                            <button class="white"><a href="#">Ligar por áudio</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__remoto">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/marcos_correia.png" alt="Foto do perfil paciente">
+                        <h2>Marcos Correia</h2>
+                        <div class="type_consult"><img src="./styles/assets/Camera.svg" alt="">
+                            <p>Consulta remota</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>17:20 - 18:00 (40 minutos)</h2>
+                        <div class="botao">
+                            <button><a href="#">Ligar por vídeo</a></button>
+                            <button class="white"><a href="#">Ligar por áudio</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__local">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/larissa_santana.png" alt="Foto do perfil paciente">
+                        <h2>Larissa Santana</h2>
+                        <div class="type_consult"><img src="./styles/assets/pin.svg" alt="">
+                            <p>Consulta no local</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>16:00 - 17:00 - (1 hora)</h2>
+                        <div class="botao">
+                            <button class="blue"><a href="#">Ver endereço</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__remoto">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/luciana_dias.png" alt="Foto do perfil paciente">
+                        <h2>Luciana Dias</h2>
+                        <div class="type_consult"><img src="./styles/assets/Camera.svg" alt="">
+                            <p>Consulta remota</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>14:00 - 15:00 (1 hora)</h2>
+                        <div class="botao">
+                            <button><a href="#">Ligar por vídeo</a></button>
+                            <button class="white"><a href="#">Ligar por áudio</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards__agenda">
+            <h2 class="Date">Quinta-Feira</h2>
+            <div class="container__cards">
+                <div class="cards__remoto">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/luciana_dias.png" alt="Foto do perfil paciente">
+                        <h2>Luciana Dias</h2>
+                        <div class="type_consult"><img src="./styles/assets/Camera.svg" alt="">
+                            <p>Consulta remota</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>14:00 - 15:00 (1 hora)</h2>
+                        <div class="botao">
+                            <button><a href="#">Ligar por vídeo</a></button>
+                            <button class="white"><a href="#">Ligar por áudio</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__remoto">
+                    <div class="agenda">
+                        <img class="perfil" src="./styles/assets/img/marcos_correia.png" alt="Foto do perfil paciente">
+                        <h2>Marcos Correia</h2>
+                        <div class="type_consult"><img src="./styles/assets/Camera.svg" alt="">
+                            <p>Consulta remota</p>
+                        </div>
+                        <img class="mensagem" src="./styles/assets/Chatcirculo1.svg" alt="caixa de mensagem">
+                    </div>
+                    <div class="chamada">
+                        <h2>17:20 - 18:00 (40 minutos)</h2>
+                        <div class="botao">
+                            <button><a href="#">Ligar por vídeo</a></button>
+                            <button class="white"><a href="#">Ligar por áudio</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <input type="checkbox" name="botao_mais" id="btn_mais" class="botao_mais">
+        <label for="btn_mais" class="label_btn-mais">
+            <img src="./styles/assets/botao_mais.svg" alt="botao mais">
+        </label>
+        <span class="form__cadastro">
+            <form action="#" method="post" class="form__itens">
+                <legend>Cadastro de consultas</legend>
+                <div class="itens-form">
+                    <label for="nome">Nome do Paciente</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Nome completo" class="nome">
+                    <label for="consulta">Tipo de Consulta</label>
+                    <label for="presencial">
+                        <input type="radio" value="presencial" name="consulta" id="presencial" checked>Presencial
+                    </label>
+                    <label for="remoto">
+                        <input type="radio" value="remoto" name="consulta" id="remoto">Remoto
+                    </label>
+                </div>
+                <div class="date">
+                    <label for="data">Data</label>
+                    <input type="date" name="data" id="data" required>
+                    <label for="horas">horario</label>
+                    <select name="horas" id="horas" required>
+                        <option selected disabled value="">Horas</option>
+                        <option value="07:00">07:00</option>
+                        <option value="07:30">07:30</option>
+                        <option value="07:30">08:00</option>
+                        <option value="07:30">08:30</option>
+                        <option value="07:30">09:00</option>
+                        <option value="07:30">09:30</option>
+                        <option value="07:30">10:00</option>
+                    </select>
+                    <label for="textarea">Observações</label>
+                    <textarea name="observacao" id="observacao" cols="40" rows="5"
+                        placeholder="Descreva o motivo da consulta..."></textarea>
+                    </div>
+                    <button type="submit">Nova Consulta</button>
+            </form>
+        </span>
+        <span class="botoes__flutuantes">
+            <ul class="list_btn-float">
+                <li class="hidden">
+                    <a href="#">
+                        <p class="hidden">Nova consulta na casa do paciente</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
+                            <g filter="url(#filter0_d_6_1223)">
+                                <g filter="url(#filter1_d_6_1223)">
+                                    <circle cx="44" cy="40" r="28" fill="#4894FF" />
+                                </g>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M44 30C41.8783 30 39.8434 30.8429 38.3431 32.3431C36.8429 33.8434 36 35.8783 36 38C36 41.0981 38.0157 44.1042 40.226 46.4373C41.3106 47.5822 42.3987 48.5195 43.2167 49.1708C43.5211 49.4133 43.787 49.6152 44 49.7726C44.213 49.6152 44.4789 49.4133 44.7833 49.1708C45.6013 48.5195 46.6894 47.5822 47.774 46.4373C49.9843 44.1042 52 41.0981 52 38C52 35.8783 51.1571 33.8434 49.6569 32.3431C48.1566 30.8429 46.1217 30 44 30ZM44 51C43.4453 51.8321 43.445 51.8319 43.4448 51.8317L43.4419 51.8298L43.4352 51.8253L43.4123 51.8098C43.3928 51.7966 43.3651 51.7776 43.3296 51.753C43.2585 51.7038 43.1565 51.6321 43.0278 51.5392C42.7705 51.3534 42.4064 51.0822 41.9708 50.7354C41.1013 50.043 39.9394 49.0428 38.774 47.8127C36.4843 45.3958 34 41.9019 34 38C34 35.3478 35.0536 32.8043 36.9289 30.9289C38.8043 29.0536 41.3478 28 44 28C46.6522 28 49.1957 29.0536 51.0711 30.9289C52.9464 32.8043 54 35.3478 54 38C54 41.9019 51.5157 45.3958 49.226 47.8127C48.0606 49.0428 46.8987 50.043 46.0292 50.7354C45.5936 51.0822 45.2295 51.3534 44.9722 51.5392C44.8435 51.6321 44.7415 51.7038 44.6704 51.753C44.6349 51.7776 44.6072 51.7966 44.5877 51.8098L44.5648 51.8253L44.5581 51.8298L44.556 51.8312C44.5557 51.8314 44.5547 51.8321 44 51ZM44 51L44.5547 51.8321C44.2188 52.056 43.7807 52.0556 43.4448 51.8317L44 51Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M44 36C42.8954 36 42 36.8954 42 38C42 39.1046 42.8954 40 44 40C45.1046 40 46 39.1046 46 38C46 36.8954 45.1046 36 44 36ZM40 38C40 35.7909 41.7909 34 44 34C46.2091 34 48 35.7909 48 38C48 40.2091 46.2091 42 44 42C41.7909 42 40 40.2091 40 38Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_6_1223" x="0" y="0" width="88" height="88"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="8" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.282353 0 0 0 0 0.580392 0 0 0 0 1 0 0 0 0.5 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_6_1223" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_1223"
+                                        result="shape" />
+                                </filter>
+                                <filter id="filter1_d_6_1223" x="12" y="12" width="64" height="64"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 1 0 0 0 0 0.594833 0 0 0 0 0.220833 0 0 0 0.06 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_6_1223" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_1223"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="hidden">
+                    <a href="#">
+                        <p>Nova consulta por vídeo</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
+                            <g filter="url(#filter0_d_6_1226)">
+                                <g filter="url(#filter1_d_6_1226)">
+                                    <circle cx="44" cy="40" r="28" fill="#4894FF" />
+                                </g>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M55.4576 34.1108C55.7907 34.2822 56 34.6254 56 35V45C56 45.3746 55.7907 45.7178 55.4576 45.8892C55.1245 46.0606 54.7236 46.0315 54.4188 45.8137L47.4188 40.8137C47.156 40.626 47 40.323 47 40C47 39.6771 47.156 39.374 47.4188 39.1863L54.4188 34.1863C54.7236 33.9685 55.1245 33.9394 55.4576 34.1108ZM49.7205 40L54 43.0568V36.9432L49.7205 40Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M35 34C34.4477 34 34 34.4477 34 35V45C34 45.5523 34.4477 46 35 46H46C46.5523 46 47 45.5523 47 45V35C47 34.4477 46.5523 34 46 34H35ZM32 35C32 33.3431 33.3431 32 35 32H46C47.6569 32 49 33.3431 49 35V45C49 46.6569 47.6569 48 46 48H35C33.3431 48 32 46.6569 32 45V35Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_6_1226" x="0" y="0" width="88" height="88"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="8" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.282353 0 0 0 0 0.580392 0 0 0 0 1 0 0 0 0.5 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_6_1226" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_1226"
+                                        result="shape" />
+                                </filter>
+                                <filter id="filter1_d_6_1226" x="12" y="12" width="64" height="64"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 1 0 0 0 0 0.594833 0 0 0 0 0.220833 0 0 0 0.06 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_6_1226" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_1226"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </span>
+        <nav>
+            <ul class="navbar">
+                <li>
+                    <svg class="navbar_svg" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="22" viewBox="0 0 20 22"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3 4C2.44772 4 2 4.44772 2 5V19C2 19.5523 2.44772 20 3 20H17C17.5523 20 18 19.5523 18 19V5C18 4.44772 17.5523 4 17 4H3ZM0 5C0 3.34315 1.34315 2 3 2H17C18.6569 2 20 3.34315 20 5V19C20 20.6569 18.6569 22 17 22H3C1.34315 22 0 20.6569 0 19V5Z"
+                            fill="url(#pattern0)" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14 0C14.5523 0 15 0.447715 15 1V5C15 5.55228 14.5523 6 14 6C13.4477 6 13 5.55228 13 5V1C13 0.447715 13.4477 0 14 0Z"
+                            fill="url(#pattern1)" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6 0C6.55228 0 7 0.447715 7 1V5C7 5.55228 6.55228 6 6 6C5.44772 6 5 5.55228 5 5V1C5 0.447715 5.44772 0 6 0Z"
+                            fill="url(#pattern2)" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 9C0 8.44771 0.447715 8 1 8H19C19.5523 8 20 8.44771 20 9C20 9.55228 19.5523 10 19 10H1C0.447715 10 0 9.55228 0 9Z"
+                            fill="url(#pattern3)" />
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_6_1501" transform="scale(0.00833333 0.00757576)" />
+                            </pattern>
+                            <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_6_1501" transform="scale(0.00833333 0.00757576)" />
+                            </pattern>
+                            <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_6_1501" transform="scale(0.00833333 0.00757576)" />
+                            </pattern>
+                            <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_6_1501" transform="scale(0.00833333 0.00757576)" />
+                            </pattern>
+                            <image id="image0_6_1501" width="120" height="132"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+                    <p>Consultas</p>
+                </li>
+                <li>
+                    <svg class="navbar_svg" xmlns="http://www.w3.org/2000/svg" width="24" height="20"
+                        viewBox="0 0 24 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.46447 13.4645C2.40215 12.5268 3.67392 12 5 12H13C14.3261 12 15.5979 12.5268 16.5355 13.4645C17.4732 14.4021 18 15.6739 18 17V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V17C16 16.2043 15.6839 15.4413 15.1213 14.8787C14.5587 14.3161 13.7956 14 13 14H5C4.20435 14 3.44129 14.3161 2.87868 14.8787C2.31607 15.4413 2 16.2043 2 17V19C2 19.5523 1.55228 20 1 20C0.447715 20 0 19.5523 0 19V17C0 15.6739 0.526784 14.4021 1.46447 13.4645Z"
+                            fill="#464646" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9 2C7.34315 2 6 3.34315 6 5C6 6.65685 7.34315 8 9 8C10.6569 8 12 6.65685 12 5C12 3.34315 10.6569 2 9 2ZM4 5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5C14 7.76142 11.7614 10 9 10C6.23858 10 4 7.76142 4 5Z"
+                            fill="#464646" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.0318 12.88C19.1698 12.3453 19.7153 12.0237 20.25 12.1618C21.3227 12.4387 22.273 13.0641 22.9517 13.9397C23.6304 14.8152 23.9992 15.8914 24 16.9993V19C24 19.5523 23.5523 20 23 20C22.4477 20 22 19.5523 22 19V17.0007C22 17.0006 22 17.0008 22 17.0007C21.9994 16.3361 21.7782 15.6902 21.371 15.165C20.9638 14.6396 20.3936 14.2644 19.75 14.0982C19.2153 13.9602 18.8937 13.4148 19.0318 12.88Z"
+                            fill="#464646" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.0312 0.881962C15.1682 0.346936 15.713 0.0242632 16.248 0.161251C17.3236 0.436628 18.2768 1.06213 18.9576 1.93914C19.6383 2.81615 20.0078 3.89479 20.0078 5.005C20.0078 6.11521 19.6383 7.19385 18.9576 8.07086C18.2768 8.94787 17.3236 9.57337 16.248 9.84875C15.713 9.98574 15.1682 9.66307 15.0312 9.12804C14.8943 8.59301 15.2169 8.04824 15.752 7.91125C16.3973 7.74603 16.9692 7.37073 17.3777 6.84452C17.7861 6.31831 18.0078 5.67113 18.0078 5.005C18.0078 4.33887 17.7861 3.69169 17.3777 3.16548C16.9692 2.63928 16.3973 2.26398 15.752 2.09875C15.2169 1.96176 14.8943 1.41699 15.0312 0.881962Z"
+                            fill="#464646" />
+                    </svg>
+                    <p>Clientes</p>
+                </li>
+                <li>
+                    <svg class="navbar_svg" xmlns="http://www.w3.org/2000/svg" width="14" height="18"
+                        viewBox="0 0 14 18" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 6C13.5523 6 14 6.44772 14 7V17C14 17.5523 13.5523 18 13 18C12.4477 18 12 17.5523 12 17V7C12 6.44772 12.4477 6 13 6Z"
+                            fill="#464646" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 0C7.55228 0 8 0.447715 8 1V17C8 17.5523 7.55228 18 7 18C6.44772 18 6 17.5523 6 17V1C6 0.447715 6.44772 0 7 0Z"
+                            fill="#464646" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1 10C1.55228 10 2 10.4477 2 11V17C2 17.5523 1.55228 18 1 18C0.447715 18 0 17.5523 0 17V11C0 10.4477 0.447715 10 1 10Z"
+                            fill="#464646" />
+                    </svg>
+                    <p>Relatórios</p>
+                </li>
+                <li>
+                    <svg class="navbar_svg" xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+                        viewBox="0 0 20 14" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 7C0 6.44772 0.447715 6 1 6H19C19.5523 6 20 6.44772 20 7C20 7.55228 19.5523 8 19 8H1C0.447715 8 0 7.55228 0 7Z"
+                            fill="#464646" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 1C0 0.447715 0.447715 0 1 0H19C19.5523 0 20 0.447715 20 1C20 1.55228 19.5523 2 19 2H1C0.447715 2 0 1.55228 0 1Z"
+                            fill="#464646" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 13C0 12.4477 0.447715 12 1 12H19C19.5523 12 20 12.4477 20 13C20 13.5523 19.5523 14 19 14H1C0.447715 14 0 13.5523 0 13Z"
+                            fill="#464646" />
+                    </svg>
+                    <p>Menu</p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

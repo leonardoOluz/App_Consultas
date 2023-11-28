@@ -1,0 +1,50 @@
+footer .botoes__flutuantes,
+footer .form__cadastro,
+footer .botao_mais {
+    display: none;
+}
+
+.botoes__flutuantes li a {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-decoration: none;
+}
+
+.botoes__flutuantes ul a p {
+    padding: 2px 8px;
+    color: #464646;
+    font-size: 12px;
+    background-color: #fff;
+    font-weight: 500;
+    line-height: 160%;
+    border-radius: 2323px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .label_btn-mais {
+    position: fixed;
+    bottom: 14%;
+    right: 5px;
+    z-index: 502;
+    transition: transform 200ms linear;
+}
+
+footer .label_btn-mais:hover {
+    transform: scale(1.09);
+}
+
+footer .botao_mais:checked~.botoes__flutuantes {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    z-index: 501;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, .3);
+    padding-bottom: 11.5rem;
+}

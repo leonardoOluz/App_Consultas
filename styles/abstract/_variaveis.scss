@@ -1,0 +1,16 @@
+$cor-fundo: #fff;
+$cor-preto: #000;
+$cor-pretos-preta: #333;
+$cor-cinza-texto: #A3A3A3;
+$cor-preto-titulo: #464646;
+$cor-botao: #FFB050;
+$cor-azul-navbar: #4894FF;
+
+$fonte-principal: 'Montserrat', sans-serif;
+
+@mixin texto-principal($fonte-size) {
+    font-size: $fonte-size;
+    color: $cor-preto-titulo;
+    font-weight: 700;
+    // line-height: 1rem;
+}

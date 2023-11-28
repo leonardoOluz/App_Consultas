@@ -1,0 +1,48 @@
+@import "../abstract/variaveis";
+
+
+
+
+.navbar {
+    background: rgba($color: $cor-cinza-texto, $alpha: 0.1);
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    background-color: $cor-fundo;
+    border-radius: 12px 12px 0 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
+
+    /* Obs: Verificar a font-size e fonte-weight dos texto */
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+        color: $cor-preto-titulo;
+        cursor: pointer;
+
+        .navbar_svg {
+            align-self: center;
+            stroke: $cor-cinza-texto;
+        }
+
+        &:hover {
+            .navbar_svg {
+                stroke: $cor-azul-navbar;
+                fill: $cor-azul-navbar;
+            }
+
+            color: $cor-azul-navbar;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 160%
+        }
+    }
+}

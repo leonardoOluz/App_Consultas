@@ -1,0 +1,180 @@
+@media screen and (min-width: 1024px) {
+
+    header .cabecalho,
+    footer .form__cadastro {
+        display: none;
+    }
+
+    main .cards__agenda .Date {
+        background-color: #ffffffbc;
+        width: auto;
+        margin-bottom: 1em;
+    }
+
+    body {
+        display: grid;
+        grid-template-areas:
+            "lateral perfil"
+            "lateral principal"
+        ;
+        grid-template-columns: 15% 85%;
+
+    }
+
+    header {
+        grid-area: perfil;
+
+        border-left: 1px solid #A3A3A3;
+    }
+
+    main {
+        grid-area: principal;
+        padding-bottom: 0;
+        border-left: 1px solid #A3A3A3;
+    }
+
+    footer {
+        position: fixed;
+    }
+
+    footer nav .navbar {
+        padding-top: 2.5rem;
+        grid-area: lateral;
+        position: static;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0);
+    }
+
+    footer nav .navbar li {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+
+    footer .botao_mais:checked~.botoes__flutuantes {
+        display: none;
+    }
+
+    footer .botao_mais:checked~.form__cadastro {
+        padding: 2rem;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        ;
+    }
+
+    footer .form__cadastro .form__itens {
+        display: flex;
+        flex-direction: row;
+        padding: 2.5rem;
+        border-radius: 25px;
+        background: #F3F3F3;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        column-gap: 3rem;
+    }
+
+    footer .form__cadastro .form__itens .itens-form,
+    footer .form__cadastro .form__itens .date {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .form__cadastro .form__itens legend {
+        font-size: 1.125rem;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        padding: .5rem;
+    }
+
+    footer .form__cadastro .form__itens .itens-form input,
+    footer .form__cadastro .form__itens .date select,
+    footer .form__cadastro .form__itens .date input,
+    footer .form__cadastro .form__itens .itens-form textarea {
+        border: none;
+        border-radius: 12px;
+        padding: .5rem 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    footer .form__cadastro .form__itens .date input,
+    footer .form__cadastro .form__itens .date select {
+        width: 50%;
+    }
+
+    footer .form__cadastro .form__itens .itens-form .nome {
+        width: 100%;
+    }
+
+    footer .form__cadastro .form__itens .date input:focus,
+    footer .form__cadastro .form__itens .date select:focus,
+    footer .form__cadastro .form__itens .itens-form input:focus,
+    footer .form__cadastro .form__itens .itens-form textarea:focus {
+        outline: none;
+        border: 1px solid #DE0000;
+    }
+
+    footer .form__cadastro .form__itens .itens-form input::placeholder {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #CFCFCF;
+        line-height: 2rem;
+    }
+
+    footer .form__cadastro .form__itens .date select option {
+        padding: 2rem;
+        color: #333;
+    }
+
+
+
+    footer .form__cadastro .form__itens .itens-form label,
+    footer .form__cadastro .form__itens .consulta label,
+    footer .form__cadastro .form__itens .date label {
+        padding: .5rem 0;
+        color: #333;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    footer .form__cadastro .form__itens .itens-form textarea {
+        border: none;
+        border-radius: 12px;
+    }
+
+    footer .form__cadastro .form__itens .itens-form textarea::placeholder {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #CFCFCF;
+        line-height: 2rem;
+    }
+
+    footer .form__cadastro .form__itens button {
+        max-width: 160px;
+        align-self: center;
+        padding: .5rem .5rem;
+        border-radius: 8px;
+        border: 2px solid var(--blue-blue-400, #57A4FF);
+        background: var(--blue-blue-700, #4373DC);
+        box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 2rem;
+        cursor: pointer;
+        transition: transform 100ms linear;
+    }
+
+    footer .form__cadastro .form__itens button:hover {
+        transform: scale(1.09);
+    }
+}

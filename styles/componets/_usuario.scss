@@ -1,0 +1,30 @@
+@import "../abstract/variaveis";
+
+.usuario {
+    padding: 2rem 1rem;
+    background: rgba($color: $cor-cinza-texto, $alpha: 0.1);
+    display: grid;
+    grid-template-areas:
+        "imagem apresentacao"
+        "imagem consultas"
+    ;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.8rem;
+
+    img {
+        grid-area: imagem;
+    }
+
+    h2 {
+        grid-area: apresentacao;
+        $fonte-size: 22px;
+        @include texto-principal($fonte-size);
+    }
+
+    p {
+        grid-area: consultas;
+        font-size: 14px;
+        color: $cor-cinza-texto;
+        line-height: 160%;
+    }
+}

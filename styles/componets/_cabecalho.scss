@@ -1,0 +1,18 @@
+@import "../abstract/variaveis";
+
+.cabecalho {
+    padding: .7rem .7rem;
+    display: flex;
+    gap: .8rem;
+    
+    h2 {
+        color: $cor-pretos-preta;
+    }
+
+    .icons {
+        width: 90%;
+        display: flex;
+        justify-content: end;
+        gap: 0.8rem;
+    }
+}

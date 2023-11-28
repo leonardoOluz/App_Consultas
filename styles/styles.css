@@ -1,0 +1,265 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.cabecalho {
+  padding: 0.7rem 0.7rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.cabecalho h2 {
+  color: #333;
+}
+.cabecalho .icons {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+  gap: 0.8rem;
+}
+
+.usuario {
+  padding: 2rem 1rem;
+  background: rgba(163, 163, 163, 0.1);
+  display: grid;
+  grid-template-areas: "imagem apresentacao" "imagem consultas";
+  grid-template-columns: auto 1fr;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+}
+.usuario img {
+  grid-area: imagem;
+}
+.usuario h2 {
+  grid-area: apresentacao;
+  font-size: 22px;
+  color: #464646;
+  font-weight: 700;
+}
+.usuario p {
+  grid-area: consultas;
+  font-size: 14px;
+  color: #A3A3A3;
+  line-height: 160%;
+}
+
+main {
+  padding-bottom: 5rem;
+}
+main .cards__agenda {
+  background: rgba(163, 163, 163, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+main .cards__agenda h2 {
+  width: 85%;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+main .cards__agenda .container__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 0.4rem;
+       column-gap: 0.4rem;
+}
+main .cards__agenda .container__cards .cards__remoto .agenda {
+  border-radius: 8px 8px 0 0;
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1px;
+  display: grid;
+  grid-template-areas: "perfil nome mensagem" "perfil tipo mensagem";
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+}
+main .cards__agenda .container__cards .cards__remoto .agenda .perfil {
+  grid-area: perfil;
+}
+main .cards__agenda .container__cards .cards__remoto .agenda h2 {
+  grid-area: nome;
+  font-size: 1rem;
+  color: #464646;
+  font-weight: 700;
+}
+main .cards__agenda .container__cards .cards__remoto .agenda .type_consult {
+  grid-area: tipo;
+  font-size: 0.75rem;
+  color: #A3A3A3;
+  line-height: 160%;
+  display: flex;
+  gap: 0 0.8rem;
+}
+main .cards__agenda .container__cards .cards__remoto .agenda .mensagem {
+  grid-area: mensagem;
+  transition: transform 200ms liner;
+  cursor: pointer;
+}
+main .cards__agenda .container__cards .cards__remoto .agenda .mensagem:hover {
+  transform: scale(1.2);
+}
+main .cards__agenda .container__cards .cards__remoto .chamada {
+  border-radius: 0 0 8px 8px;
+  background-color: #fff;
+  align-self: center;
+  padding: 0.3rem 1rem 0.7rem 1rem;
+  margin-bottom: 1rem;
+}
+main .cards__agenda .container__cards .cards__remoto .chamada h2 {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 160%;
+  color: #464646;
+}
+main .cards__agenda .container__cards .cards__remoto .chamada .botao {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem 1rem;
+}
+main .cards__agenda .container__cards .cards__remoto .chamada .botao button {
+  min-width: 139px;
+  box-shadow: 0px 4px 16px 0px rgba(255, 176, 80, 0.16);
+  background: #FFB050;
+  border-radius: 8px;
+  padding: 1rem 0;
+  border: none;
+  font-weight: 500;
+  transition: transform 200ms;
+}
+main .cards__agenda .container__cards .cards__remoto .chamada .botao button a {
+  color: #fff;
+  text-decoration: none;
+}
+main .cards__agenda .container__cards .cards__remoto .chamada .botao button:hover {
+  transform: scale(1.08);
+}
+main .cards__agenda .container__cards .cards__remoto .chamada .botao .white {
+  box-shadow: none;
+  border: 1px solid #ECECEC;
+  background: #fff;
+}
+main .cards__agenda .container__cards .cards__remoto .chamada .botao .white a {
+  color: #464646;
+  text-decoration: none;
+}
+main .cards__agenda .container__cards .cards__local .agenda {
+  border-radius: 8px 8px 0 0;
+  background-color: #fff;
+  align-self: center;
+  padding: 1rem;
+  margin-bottom: 1px;
+  display: grid;
+  grid-template-areas: "perfil nome mensagem" "perfil tipo mensagem";
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+}
+main .cards__agenda .container__cards .cards__local .agenda .perfil {
+  grid-area: perfil;
+}
+main .cards__agenda .container__cards .cards__local .agenda h2 {
+  grid-area: nome;
+  font-size: 1rem;
+  color: #464646;
+  font-weight: 700;
+}
+main .cards__agenda .container__cards .cards__local .agenda .type_consult {
+  grid-area: tipo;
+  font-size: 0.75rem;
+  color: #A3A3A3;
+  line-height: 160%;
+  display: flex;
+  gap: 0.8rem;
+}
+main .cards__agenda .container__cards .cards__local .agenda .mensagem {
+  grid-area: mensagem;
+  transition: transform 200ms linear;
+  cursor: pointer;
+}
+main .cards__agenda .container__cards .cards__local .agenda .mensagem:hover {
+  transform: scale(1.2);
+}
+main .cards__agenda .container__cards .cards__local .chamada {
+  border-radius: 0 0 8px 8px;
+  background-color: #fff;
+  align-self: center;
+  padding: 0.3rem 1rem 0.6rem 1rem;
+  margin-bottom: 1rem;
+}
+main .cards__agenda .container__cards .cards__local .chamada h2 {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 160%;
+  color: #464646;
+}
+main .cards__agenda .container__cards .cards__local .chamada .botao {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem 1rem;
+}
+main .cards__agenda .container__cards .cards__local .chamada .botao button {
+  border-radius: 8px;
+  padding: 1rem 0;
+  border: none;
+  font-weight: 500;
+  min-width: 296px;
+  background: #4894FF;
+  box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+  transition: transform 200ms linear;
+}
+main .cards__agenda .container__cards .cards__local .chamada .botao button a {
+  color: #fff;
+  text-decoration: none;
+}
+main .cards__agenda .container__cards .cards__local .chamada .botao button:hover {
+  transform: scale(1.08);
+}
+
+@media screen and (min-width: 720px) {
+  main .cards__agenda .container__cards {
+    justify-content: center;
+  }
+}
+.navbar {
+  background: rgba(163, 163, 163, 0.1);
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  background-color: #fff;
+  border-radius: 12px 12px 0 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
+  /* Obs: Verificar a font-size e fonte-weight dos texto */
+}
+.navbar li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #464646;
+  cursor: pointer;
+}
+.navbar li .navbar_svg {
+  align-self: center;
+  stroke: #A3A3A3;
+}
+.navbar li:hover {
+  color: #4894FF;
+}
+.navbar li:hover .navbar_svg {
+  stroke: #4894FF;
+  fill: #4894FF;
+}
+.navbar li p {
+  font-size: 12px;
+  line-height: 160%;
+}/*# sourceMappingURL=styles.css.map */
